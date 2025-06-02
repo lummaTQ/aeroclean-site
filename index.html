@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AeroClean | Professional Cleaning Service</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.querySelectorAll('.service-card').forEach(card => {
+        card.addEventListener('click', () => {
+          const details = card.querySelector('.service-details');
+          if (details) {
+            details.classList.toggle('visible');
+          }
+        });
+      });
+    });
+  </script>
+  <style>
+    .service-card {
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      position: relative;
+    }
+    .service-card h3 {
+      font-size: 1.5rem;
+      background: rgba(0,0,0,0.5);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+    .service-details {
+      background: #fff;
+      color: #000;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+      display: none;
+    }
+    .service-details.visible {
+      display: block;
+    }
+    .book-btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #004d4d;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .book-btn:hover {
+      background: #00695c;
+    }
+    #contact a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+      margin: 0.5rem 0;
+      transition: color 0.3s;
+    }
+    #contact a:hover {
+      color: #00e6e6;
+    }
+    #contact img {
+      height: 28px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+    #contact a:hover img {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body style="background:black; color:white;">
+  <header>
+    <div class="logo">
+      <img src="images/AeroClean.png" alt="AeroClean Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>AeroClean</h1>
+    <h2>Clean Cars. Clean Homes. Clean Life.</h2>
+    <p>Reliable, affordable cleaning for vehicles, furniture, and more – powered by AeroClean.</p>
+    <a href="https://wa.me/26772426263" target="_blank" class="cta-button">Book on WhatsApp</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service-card" style="background-image: url('images/CarWash.jpg');">
+        <h3>Car Wash</h3>
+        <div class="service-details">
+          <p><strong>Standard Wash:</strong> P60</p>
+          <p><strong>Standard + Mats/Polish:</strong> P80</p>
+          <p><strong>Full Shine:</strong> P100</p>
+          <p>Add-ons: Car seats cleaning / Special package(extra cost)</p>
+          <a href="https://wa.me/26772426263?text=Hi%20AeroClean,%20I'm%20interested%20in%20Car%20Wash%20booking." class="book-btn" target="_blank">Book Now</a>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('images/Couch.jpg');">
+        <h3>Couch Cleaning</h3>
+        <div class="service-details">
+          <p><strong>Single Seater:</strong> P150</p>
+          <p><strong>Double Seater:</strong> P250</p>
+          <p><strong>Large Sofa:</strong> P350</p>
+          <a href="https://wa.me/26772426263?text=Hi%20AeroClean,%20I'm%20interested%20in%20Couch%20Cleaning." class="book-btn" target="_blank">Book Now</a>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('images/matress.jpg');">
+        <h3>Mattress Cleaning</h3>
+        <div class="service-details">
+          <p><strong>Single:</strong> P200</p>
+          <p><strong>Double:</strong> P250</p>
+          <p><strong>Queen:</strong> P300</p>
+          <p><strong>King:</strong> P350</p>
+          <a href="https://wa.me/26772426263?text=Hi%20AeroClean,%20I'd%20like%20to%20book%20Mattress%20Cleaning." class="book-btn" target="_blank">Book Now</a>
+        </div>
+      </div>
+      <div class="service-card" style="background-image: url('images/CarpetClean.jpg');">
+        <h3>Carpet Cleaning</h3>
+        <div class="service-details">
+          <p><strong>Light Carpet:</strong> P100</p>
+          <p><strong>Heavy Carpet:</strong> P200</p>
+          <p>Pickup and drop-off offered</p>
+          <a href="https://wa.me/26772426263?text=Hi%20AeroClean,%20I'd%20like%20to%20book%20Carpet%20Cleaning." class="book-btn" target="_blank">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="margin-top: 1 rem;">
+      <h2>Why Choose Us</h2>
+      <p>
+        At AeroClean, we bring the cleaning experience to your doorstep. Whether it’s your car that needs care or your furniture that needs freshening up,
+        our efficient and eco-friendly services ensure a spotless clean every time. We take pride in displaying a gallery of our finest work,
+        offering transparent pricing and convenient booking options for your comfort.
+      </p>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Work</h2>
+    <iframe src="https://snapwidget.com/embed/1098391" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:765px; height:510px" title="Posts from Instagram"></iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><a href="https://wa.me/26772426263" target="_blank"><img src="images/WApp.jpg" alt="WhatsApp"> +267 7242 6263</a></p>
+    <p><a href="https://www.instagram.com/aerocleanbw" target="_blank"><img src="images/insta.webp" alt="Instagram"> @aerocleanbw</a></p>
+  </section>
+</body>
+</html>
+
+<footer>
+    &copy; 2025 AeroClean. All rights reserved.
+  </footer>
+</body>
+</html>
