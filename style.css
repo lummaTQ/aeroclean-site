@@ -210,3 +210,13 @@ nav a:hover {
   height: 100%;
   border: none;
 }
+
+#contact a img {
+  height: 28px;
+  max-width: 28px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#contact p {
+  margin: 0.75rem 0;
+}
